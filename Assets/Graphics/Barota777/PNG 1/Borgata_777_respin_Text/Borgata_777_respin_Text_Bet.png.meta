@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 4993791789bb14c57b4245e3fad2600d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6243872704204735956
+    second: Borgata_777_respin_Text_Bet_0
+  - first:
+      213: 2541969680595565244
+    second: Borgata_777_respin_Text_Bet_1
+  - first:
+      213: 3008236025820665605
+    second: Borgata_777_respin_Text_Bet_2
+  - first:
+      213: 3942238606971459952
+    second: Borgata_777_respin_Text_Bet_3
+  - first:
+      213: 6702135454892758810
+    second: Borgata_777_respin_Text_Bet_4
+  - first:
+      213: -317153920251526288
+    second: Borgata_777_respin_Text_Bet_5
+  - first:
+      213: 4164678141830409538
+    second: Borgata_777_respin_Text_Bet_6
+  - first:
+      213: 5283567203662913456
+    second: Borgata_777_respin_Text_Bet_7
+  - first:
+      213: 3083937702296410212
+    second: Borgata_777_respin_Text_Bet_8
+  - first:
+      213: -3611635428717953828
+    second: Borgata_777_respin_Text_Bet_9
+  - first:
+      213: -6994012197002820676
+    second: Borgata_777_respin_Text_Bet_10
+  - first:
+      213: 4658826195521886423
+    second: Borgata_777_respin_Text_Bet_11
+  - first:
+      213: -1094240411777313470
+    second: Borgata_777_respin_Text_Bet_12
+  - first:
+      213: 4690157035884650040
+    second: Borgata_777_respin_Text_Bet_13
+  - first:
+      213: 1350631052853031384
+    second: Borgata_777_respin_Text_Bet_14
+  - first:
+      213: -2536291966803239829
+    second: Borgata_777_respin_Text_Bet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 92
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d581ec9421b6a650800000000000000
+      internalID: 6243872704204735956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 92
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba36b1e4f3e64320800000000000000
+      internalID: 2541969680595565244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 92
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507d2972ab66fb920800000000000000
+      internalID: 3008236025820665605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 19
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0795d5c4025a5b630800000000000000
+      internalID: 3942238606971459952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 19
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a171f61dfa4c20d50800000000000000
+      internalID: 6702135454892758810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 19
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073094c903e399bf0800000000000000
+      internalID: -317153920251526288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 18
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24da2af54b8ebc930800000000000000
+      internalID: 4164678141830409538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 19
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf5b31d060035940800000000000000
+      internalID: 5283567203662913456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 18
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468dfc630095cca20800000000000000
+      internalID: 3083937702296410212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_9
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 18
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdcfc0d76b4e0edc0800000000000000
+      internalID: -3611635428717953828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_10
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 19
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3c5e276f640fe90800000000000000
+      internalID: -6994012197002820676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_11
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 18
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8dd56cdb977a040800000000000000
+      internalID: 4658826195521886423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_12
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 18
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245d22d942a70d0f0800000000000000
+      internalID: -1094240411777313470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_13
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 18
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e14b089f8c61140800000000000000
+      internalID: 4690157035884650040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_14
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 10
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1baef59c76eb210800000000000000
+      internalID: 1350631052853031384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Borgata_777_respin_Text_Bet_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 19
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c1400e4e74dccd0800000000000000
+      internalID: -2536291966803239829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Borgata_777_respin_Text_Bet_0: 6243872704204735956
+      Borgata_777_respin_Text_Bet_1: 2541969680595565244
+      Borgata_777_respin_Text_Bet_10: -6994012197002820676
+      Borgata_777_respin_Text_Bet_11: 4658826195521886423
+      Borgata_777_respin_Text_Bet_12: -1094240411777313470
+      Borgata_777_respin_Text_Bet_13: 4690157035884650040
+      Borgata_777_respin_Text_Bet_14: 1350631052853031384
+      Borgata_777_respin_Text_Bet_15: -2536291966803239829
+      Borgata_777_respin_Text_Bet_2: 3008236025820665605
+      Borgata_777_respin_Text_Bet_3: 3942238606971459952
+      Borgata_777_respin_Text_Bet_4: 6702135454892758810
+      Borgata_777_respin_Text_Bet_5: -317153920251526288
+      Borgata_777_respin_Text_Bet_6: 4164678141830409538
+      Borgata_777_respin_Text_Bet_7: 5283567203662913456
+      Borgata_777_respin_Text_Bet_8: 3083937702296410212
+      Borgata_777_respin_Text_Bet_9: -3611635428717953828
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: a9c9f5894d3aa404a96eb94637d74fd2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6086095905086730842
+    second: huge win12fps_00006_0
+  - first:
+      213: 5622305426766904788
+    second: huge win12fps_00006_1
+  - first:
+      213: -4198017732358777332
+    second: huge win12fps_00006_2
+  - first:
+      213: -1062929705221372095
+    second: huge win12fps_00006_3
+  - first:
+      213: -6900798274463115403
+    second: huge win12fps_00006_4
+  - first:
+      213: 3967913220124561372
+    second: huge win12fps_00006_5
+  - first:
+      213: 968558718172759466
+    second: huge win12fps_00006_6
+  - first:
+      213: -5911789942805699479
+    second: huge win12fps_00006_7
+  - first:
+      213: 24501436826388766
+    second: huge win12fps_00006_8
+  - first:
+      213: -8792210397024454070
+    second: huge win12fps_00006_9
+  - first:
+      213: 7150662442720398948
+    second: huge win12fps_00006_10
+  - first:
+      213: -2629201852713434154
+    second: huge win12fps_00006_11
+  - first:
+      213: -4145958075744799418
+    second: huge win12fps_00006_12
+  - first:
+      213: 2984788220950289485
+    second: huge win12fps_00006_13
+  - first:
+      213: 6868150552244502228
+    second: huge win12fps_00006_14
+  - first:
+      213: 3938931202922936247
+    second: huge win12fps_00006_15
+  - first:
+      213: -2777846130711230919
+    second: huge win12fps_00006_16
+  - first:
+      213: -498994760085156763
+    second: huge win12fps_00006_17
+  - first:
+      213: 4289355973845473211
+    second: huge win12fps_00006_18
+  - first:
+      213: -4970079737891623167
+    second: huge win12fps_00006_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: huge win12fps_00006_0
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1062
+        width: 151
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad88541508d98ba0800000000000000
+      internalID: -6086095905086730842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_1
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1073
+        width: 98
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd31355ff0760e40800000000000000
+      internalID: 5622305426766904788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_2
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 911
+        width: 168
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06d6fd4d15adb5c0800000000000000
+      internalID: -4198017732358777332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_3
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 873
+        width: 180
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147c1139017bf31f0800000000000000
+      internalID: -1062929705221372095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 868
+        width: 169
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5775ff708807b30a0800000000000000
+      internalID: -6900798274463115403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_5
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 938
+        width: 125
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfc9110d0cd01730800000000000000
+      internalID: 3967913220124561372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_6
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 936
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa58bc4c503017d00800000000000000
+      internalID: 968558718172759466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_7
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 960
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964e6587e5a15fda0800000000000000
+      internalID: -5911789942805699479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 691
+        width: 136
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19068e4deb075000800000000000000
+      internalID: 24501436826388766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_9
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 782
+        width: 151
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a7cde1a3bcbf580800000000000000
+      internalID: -8792210397024454070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_10
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 491
+        width: 752
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e83171b914c3360800000000000000
+      internalID: 7150662442720398948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_11
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 820
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3873658d2338bd0800000000000000
+      internalID: -2629201852713434154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_12
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 766
+        width: 110
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645b199a8199676c0800000000000000
+      internalID: -4145958075744799418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_13
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 679
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c1387a2191c6920800000000000000
+      internalID: 2984788220950289485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_14
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 577
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4debf6ac982905f50800000000000000
+      internalID: 6868150552244502228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_15
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 508
+        width: 126
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b77ce84f05e9a630800000000000000
+      internalID: 3938931202922936247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_16
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 474
+        width: 155
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936834a69ab1379d0800000000000000
+      internalID: -2777846130711230919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_17
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 410
+        width: 67
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cc754d8e63319f0800000000000000
+      internalID: -498994760085156763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_18
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 378
+        width: 112
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb75240488ad68b30800000000000000
+      internalID: 4289355973845473211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: huge win12fps_00006_19
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 416
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f6a9d9fcab60bb0800000000000000
+      internalID: -4970079737891623167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      huge win12fps_00006_0: -6086095905086730842
+      huge win12fps_00006_1: 5622305426766904788
+      huge win12fps_00006_10: 7150662442720398948
+      huge win12fps_00006_11: -2629201852713434154
+      huge win12fps_00006_12: -4145958075744799418
+      huge win12fps_00006_13: 2984788220950289485
+      huge win12fps_00006_14: 6868150552244502228
+      huge win12fps_00006_15: 3938931202922936247
+      huge win12fps_00006_16: -2777846130711230919
+      huge win12fps_00006_17: -498994760085156763
+      huge win12fps_00006_18: 4289355973845473211
+      huge win12fps_00006_19: -4970079737891623167
+      huge win12fps_00006_2: -4198017732358777332
+      huge win12fps_00006_3: -1062929705221372095
+      huge win12fps_00006_4: -6900798274463115403
+      huge win12fps_00006_5: 3967913220124561372
+      huge win12fps_00006_6: 968558718172759466
+      huge win12fps_00006_7: -5911789942805699479
+      huge win12fps_00006_8: 24501436826388766
+      huge win12fps_00006_9: -8792210397024454070
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
