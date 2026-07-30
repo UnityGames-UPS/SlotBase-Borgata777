@@ -17,7 +17,7 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioSource audioPlayer_Bonus;
     private void Start()
     {
-        if (bg_adudio) bg_adudio.Play();
+        // if (bg_adudio) bg_adudio.Play();
         audioPlayer_button.clip = clips[clips.Length - 1];
         audioSpin_button.clip = clips[clips.Length - 2];
     }
@@ -26,13 +26,13 @@ public class AudioController : MonoBehaviour
     {
         if (!focus)
         {
-            bg_adudio.Pause();
+            //  bg_adudio.Pause();
             audioPlayer_wl.Pause();
             audioPlayer_button.Pause();
         }
         else
         {
-            if (!bg_adudio.mute) bg_adudio.UnPause();
+            // if (!bg_adudio.mute) bg_adudio.UnPause();
             if (IsSpinning)
             {
                 if (!audioPlayer_wl.mute) audioPlayer_wl.UnPause();
@@ -51,12 +51,12 @@ public class AudioController : MonoBehaviour
         if (isbonus)
         {
             if (bg_audioBonus) bg_audioBonus.enabled = true;
-            if (bg_adudio) bg_adudio.enabled = false;
+            // if (bg_adudio) bg_adudio.enabled = false;
         }
         else
         {
             if (bg_audioBonus) bg_audioBonus.enabled = false;
-            if (bg_adudio) bg_adudio.enabled = true;
+            // if (bg_adudio) bg_adudio.enabled = true;
         }
     }
 
@@ -148,7 +148,7 @@ public class AudioController : MonoBehaviour
         switch (type)
         {
             case "bg":
-                bg_adudio.mute = toggle;
+                //   bg_adudio.mute = toggle;
                 bg_audioBonus.mute = toggle;
                 break;
             case "button":
@@ -161,7 +161,7 @@ public class AudioController : MonoBehaviour
                 break;
             case "all":
                 audioPlayer_wl.mute = toggle;
-                bg_adudio.mute = toggle;
+                //  bg_adudio.mute = toggle;
                 audioPlayer_button.mute = toggle;
                 audioSpin_button.mute = toggle;
                 break;

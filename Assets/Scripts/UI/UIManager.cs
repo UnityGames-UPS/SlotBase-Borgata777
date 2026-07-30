@@ -417,9 +417,10 @@ public class UIManager : MonoBehaviour
   {
     double initAmount = 0;
     if (WinPopup_Object) WinPopup_Object.SetActive(true);
+    if (audioController) audioController.PlayWLAudio("megaWin");
     // SpriteNumberText Text = Win_Text.gameObject.GetComponent<SpriteNumberText>();
     // Text.AnimateFromZero(amount);
-    audioController.PlayWLAudio("phone");
+    // audioController.PlayWLAudio("phone");
     // // if (MainPopup_Object) MainPopup_Object.SetActive(true);
     // WinPopupTextTween = DOTween.To(() => initAmount, (val) => initAmount = val, amount, 1f).OnUpdate(() =>
     // {
@@ -430,6 +431,7 @@ public class UIManager : MonoBehaviour
     {
       // ClosePopup(WinPopup_Object);
       if (WinPopup_Object) WinPopup_Object.SetActive(false);
+      coins.ClearAll();
       slotManager.CheckPopups = false;
     });
   }
@@ -493,9 +495,13 @@ public class UIManager : MonoBehaviour
   }
   private void PopulateSymbolsPayout(Paylines paylines)
   {
-    double betPerLine = 1;
-    //double betPerLine = socketManager.InitialData.bets[slotManager.BetCounter];
-    // SymbolsText[0].text = (paylines.symbols[6].multiplier[0] * betPerLine).ToString();
+
+    double betPerLine = socketManager.InitialData.bets[slotManager.BetCounter];
+    for (int i = 0; i < socketManager.FeaturesData.paytable.Count; i++)
+    {
+      Debug.Log("xxxxxxxxxxxxxx" + socketManager.FeaturesData.paytable[i].payoutMultiplier + "       " + betPerLine);
+      SymbolsText[i].text = "BET x " + socketManager.FeaturesData.paytable[i].payoutMultiplier.ToString();
+    }
     // SymbolsText[1].text = (paylines.symbols[7].multiplier[0] * betPerLine).ToString();
     // SymbolsText[2].text = (paylines.symbols[1].multiplier[0] * betPerLine).ToString();
     // SymbolsText[3].text = (paylines.symbols[4].multiplier[0] * betPerLine).ToString();

@@ -687,6 +687,8 @@ public class Payload
   //public double winAmount { get; set; }
   public List<LineWin> lineWins { get; set; }
   public bool jackpotTriggered { get; set; }
+
+  public string jackpotType { get; set; }
   public RespinBonus respinBonus { get; set; }
   public double grandTotalWin { get; set; }
   public double netReturnRatio { get; set; }
@@ -708,6 +710,7 @@ public class Features
   public Jackpot jackpot { get; set; }
   public AnyPayouts anyPayouts { get; set; }
   public RespinBonus respinBonus { get; set; }
+  public List<Paytable> paytable { get; set; }
 }
 
 public class GameData
@@ -735,7 +738,7 @@ public class RespinBonus
 
   public int maxRespins { get; set; }
   public double triggerProbability { get; set; }
-  public int guaranteedRTPStepMultiplier { get; set; }
+  public double guaranteedRTPStepMultiplier { get; set; }
   public bool triggered { get; set; }
   public int rounds { get; set; }
   public int totalRounds { get; set; }
@@ -781,4 +784,13 @@ public class Step
   public double stepTotalWinCash { get; set; }
   public int stepTotalWinCredits { get; set; }
   public bool isGuaranteedInflationApplied { get; set; }
+}
+public class Paytable
+{
+  public string winType { get; set; }
+  public string name { get; set; }
+  public int payoutMultiplier { get; set; }
+  public string betMultiplierDescription { get; set; }
+  public List<int> symbolIds { get; set; }
+  public string group { get; set; }
 }

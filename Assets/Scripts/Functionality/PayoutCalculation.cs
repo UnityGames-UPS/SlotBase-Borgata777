@@ -19,25 +19,35 @@ public class PayoutCalculation : MonoBehaviour
     private Vector2 InitialLinePosition = new Vector2(-315, 100);
     [SerializeField]
     private List<GameObject> Staticpaylines;
+    [SerializeField]
+    private List<GameObject> LeftDots;
+    [SerializeField]
+    private List<GameObject> RightDots;
+
+    GameObject TempLeftDot = null;
+    GameObject TempRightDot = null;
     GameObject TempObj = null;
 
-    //generate lines at runtime accordingly
     internal void GeneratePayoutLinesBackend(int index, bool isStatic = false)
     {
         GameObject MyLineObj = Staticpaylines[index];
         MyLineObj.GetComponent<ImageAnimation>().StartAnimation();
-        // MyLineObj.transform.localPosition = new Vector2(InitialLinePosition.x, InitialLinePosition.y);
-        // UILineRenderer MyLine = MyLineObj.GetComponent<UILineRenderer>();
-        // for (int i = 0; i < Count; i++)
-        // {
-        //     var points = new Vector2() { x = i * x_Distance, y = y_index[i] * -y_Distance };
-        //     var pointlist = new List<Vector2>(MyLine.Points);
-        //     pointlist.Add(points);
-        //     MyLine.Points = pointlist.ToArray();
-        // }
-        // var newpointlist = new List<Vector2>(MyLine.Points);
-        // newpointlist.RemoveAt(0);
-        // MyLine.Points = newpointlist.ToArray();
+
+        // play the matching left/right dots at the same index
+        if (index < LeftDots.Count && index < RightDots.Count)
+        {
+            GameObject leftDot = LeftDots[index];
+            GameObject rightDot = RightDots[index];
+
+            leftDot.GetComponent<ImageAnimation>().StartAnimation();
+            rightDot.GetComponent<ImageAnimation>().StartAnimation();
+
+            if (isStatic)
+            {
+                TempLeftDot = leftDot;
+                TempRightDot = rightDot;
+            }
+        }
 
         if (isStatic)
         {
@@ -53,6 +63,18 @@ public class PayoutCalculation : MonoBehaviour
             TempObj.GetComponent<ImageAnimation>().StopAnimation();
             TempObj = null;
         }
+
+        if (TempLeftDot != null)
+        {
+            TempLeftDot.GetComponent<ImageAnimation>().StopAnimation();
+            TempLeftDot = null;
+        }
+
+        if (TempRightDot != null)
+        {
+            TempRightDot.GetComponent<ImageAnimation>().StopAnimation();
+            TempRightDot = null;
+        }
     }
 
     //delete all lines
@@ -62,7 +84,15 @@ public class PayoutCalculation : MonoBehaviour
         {
             child.GetComponent<ImageAnimation>().StopAnimation();
         }
+
+        foreach (var dot in LeftDots)
+        {
+            dot.GetComponent<ImageAnimation>().StopAnimation();
+        }
+
+        foreach (var dot in RightDots)
+        {
+            dot.GetComponent<ImageAnimation>().StopAnimation();
+        }
     }
-
-
 }
