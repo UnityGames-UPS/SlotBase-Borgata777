@@ -17,12 +17,6 @@ public class JSFunctCalls : MonoBehaviour
 #endif
   }
 
-  void OnEnable()
-  {
-#if UNITY_WEBGL && !UNITY_EDITOR
-    Application.logMessageReceived += HandleLog;
-#endif
-  }
   [DllImport("__Internal")] private static extern void RegisterResizeListener(string gameObjectName, string methodName);
 
   [DllImport("__Internal")] private static extern void RegisterTokenListener(string gameObjectName, string methodName);

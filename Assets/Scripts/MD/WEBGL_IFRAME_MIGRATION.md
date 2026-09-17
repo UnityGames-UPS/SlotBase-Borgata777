@@ -106,12 +106,6 @@ setting). Full file:
       height: 100%;
       width: 100%;
     }
-
-    #loading-screen {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
   </style>
 </head>
 
@@ -253,19 +247,23 @@ mergeInto(LibraryManager.library, {
         SendMessage(gameObjectName, 'OnFocusChanged', focused ? '1' : '0');
       }
     }
-    function handleVisibility() { sendFocusToUnity(document.visibilityState === 'visible'); }
-    function handleBlur() { sendFocusToUnity(false); }
-    function handleFocus() { sendFocusToUnity(true); }
 
-    document.removeEventListener('visibilitychange', handleVisibility);
-    document.removeEventListener('webkitvisibilitychange', handleVisibility);
-    window.removeEventListener('blur', handleBlur);
-    window.removeEventListener('focus', handleFocus);
+    // Handlers live on window so a repeat registration can remove the previous ones —
+    // fresh local functions would never match in removeEventListener and would stack duplicates.
+    if (window._unityVisibilityCallback) {
+      document.removeEventListener('visibilitychange', window._unityVisibilityCallback);
+      document.removeEventListener('webkitvisibilitychange', window._unityVisibilityCallback);
+      window.removeEventListener('blur', window._unityWindowBlurCallback);
+      window.removeEventListener('focus', window._unityWindowFocusCallback);
+    }
+    window._unityVisibilityCallback = function () { sendFocusToUnity(!(document.hidden || document.webkitHidden)); };
+    window._unityWindowBlurCallback = function () { sendFocusToUnity(false); };
+    window._unityWindowFocusCallback = function () { sendFocusToUnity(true); };
 
-    document.addEventListener('visibilitychange', handleVisibility);
-    document.addEventListener('webkitvisibilitychange', handleVisibility);
-    window.addEventListener('blur', handleBlur);
-    window.addEventListener('focus', handleFocus);
+    document.addEventListener('visibilitychange', window._unityVisibilityCallback);
+    document.addEventListener('webkitvisibilitychange', window._unityVisibilityCallback);
+    window.addEventListener('blur', window._unityWindowBlurCallback);
+    window.addEventListener('focus', window._unityWindowFocusCallback);
   },
 
   // Self-contained resize bridge: the Unity page listens to its own viewport and pushes
@@ -408,6 +406,8 @@ public class JSFunctCalls : MonoBehaviour
   `RegisterResizeListener` / wrapper `RegisterDimensionsListener`; extern `RegisterTokenListener` /
   wrapper `RegisterAuthTokenListener`). Same name + same `(string, string)` signature = an overload
   ambiguity that won't compile.
+- If the game's existing wrappers have extra lines (e.g. a `Debug.Log` in `RegisterVisibilityListener`),
+  keeping them is fine — the target above is the minimum, not an exact match.
 - Substitute `"OC"`/`"SwitchDisplay"` with `<OC_GO>`/`<OC_METHOD>` if discovery found different names.
 - Also delete the old `SendLogToReactNative` extern and the `OnEnable/OnDisable/HandleLog`
   `Application.logMessageReceived` wiring if the game had them.
@@ -467,7 +467,7 @@ grep -c "ReactNativeWebView\|SendLogToReactNative" <JSLIB>                 # 0
 
 # C# wiring:
 grep -rn "RegisterAuthTokenListener" Assets/Scripts                        # expect wrapper def + 1 call site
-grep -c  "RegisterResizeListener\|RegisterTokenListener" <JSFUNC>          # 2 externs (single file)
+grep -c  "RegisterResizeListener\|RegisterTokenListener" <JSFUNC>          # 4 (2 externs + 2 wrapper calls)
 grep -rn "SendLogToReactNative\|logMessageReceived" Assets/Scripts         # expect no matches
 
 # No dangling refs to deleted AWT editor scripts:

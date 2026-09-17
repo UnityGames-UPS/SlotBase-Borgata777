@@ -30,6 +30,14 @@ mergeInto(LibraryManager.library, {
           }
       }
 
+      // Remove the previous handlers before replacing them, or re-registration stacks duplicates
+      if (window._unityVisibilityCallback) {
+          document.removeEventListener('visibilitychange',       window._unityVisibilityCallback);
+          document.removeEventListener('webkitvisibilitychange', window._unityVisibilityCallback);
+          window.removeEventListener('blur',  window._unityWindowBlurCallback);
+          window.removeEventListener('focus', window._unityWindowFocusCallback);
+      }
+
       window._unityVisibilityCallback = function() {
           var hidden = document.hidden || document.webkitHidden;
           sendFocusToUnity(!hidden);
@@ -37,25 +45,12 @@ mergeInto(LibraryManager.library, {
       window._unityWindowBlurCallback  = function() { sendFocusToUnity(false); };
       window._unityWindowFocusCallback = function() { sendFocusToUnity(true); };
 
-      // Remove before re-adding to avoid duplicates
-      document.removeEventListener('visibilitychange',       window._unityVisibilityCallback);
-      document.removeEventListener('webkitvisibilitychange', window._unityVisibilityCallback);
-      window.removeEventListener('blur',  window._unityWindowBlurCallback);
-      window.removeEventListener('focus', window._unityWindowFocusCallback);
-
       document.addEventListener('visibilitychange',       window._unityVisibilityCallback);
       document.addEventListener('webkitvisibilitychange', window._unityVisibilityCallback);
       window.addEventListener('blur',  window._unityWindowBlurCallback);
       window.addEventListener('focus', window._unityWindowFocusCallback);
     },
 
-    SendLogToReactNative: function (messagePtr) {
-        var message = UTF8ToString(messagePtr);
-        // console.log('jslib fun : ' + message);
-        if (window.ReactNativeWebView) {
-          window.ReactNativeWebView.postMessage(message);
-        } 
-    },
   // Outbound: Unity -> iframe host, as { type, data } via window.parent.postMessage.
   SendPostMessage: function (messagePtr) {
     var message = UTF8ToString(messagePtr);
