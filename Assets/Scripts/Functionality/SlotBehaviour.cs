@@ -366,6 +366,15 @@ public class SlotBehaviour : MonoBehaviour
   // }
   #endregion
 
+  // Backend-pushed balance correction (balance:sync). Snaps the display — this is not a
+  // spin result, so it must not tween — and re-runs the low-balance gate.
+  internal void UpdateBalanceDisplay(double newBalance)
+  {
+    currentBalance = newBalance;
+    if (Balance_text) Balance_text.text = newBalance.ToString("F2");
+    CompareBalance();
+  }
+
   private void CompareBalance()
   {
     if (currentBalance < currentTotalBet)
@@ -496,12 +505,6 @@ public class SlotBehaviour : MonoBehaviour
     uiManager.InitialiseUIData(SocketManager.UIData.paylines);
   }
   #endregion
-
-  private void OnApplicationFocus(bool focus)
-  {
-    audioController.CheckFocusFunction(focus, CheckSpinAudio);
-  }
-
 
   private void PopulateAnimationSprites(ImageAnimation animScript, int val)
   {

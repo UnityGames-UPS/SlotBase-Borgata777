@@ -15,6 +15,10 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip[] Bonusclips;
     [SerializeField] private AudioSource bg_audioBonus;
     [SerializeField] private AudioSource audioPlayer_Bonus;
+
+    private readonly Dictionary<AudioSource, bool> preFocusMuteState = new Dictionary<AudioSource, bool>();
+    private bool isForceMuted = false;
+
     private void Start()
     {
         // if (bg_adudio) bg_adudio.Play();
@@ -22,28 +26,38 @@ public class AudioController : MonoBehaviour
         audioSpin_button.clip = clips[clips.Length - 2];
     }
 
-    internal void CheckFocusFunction(bool focus, bool IsSpinning)
+    // Focus-driven mute. Called from BOTH the JS bridge (UIManager.OnFocusChanged) and
+    // Unity's native OnApplicationFocus, so it must be idempotent per direction — otherwise
+    // the second call for the same blur re-captures the already-forced mute as the
+    // "restore to" value and the audio stays silent after every refocus.
+    internal void SetMuteAll(bool forceMute)
     {
-        if (!focus)
+        if (forceMute == isForceMuted) return;
+        isForceMuted = forceMute;
+
+        foreach (var source in AllSources())
         {
-            //  bg_adudio.Pause();
-            audioPlayer_wl.Pause();
-            audioPlayer_button.Pause();
-        }
-        else
-        {
-            // if (!bg_adudio.mute) bg_adudio.UnPause();
-            if (IsSpinning)
+            if (source == null) continue;
+            if (forceMute)
             {
-                if (!audioPlayer_wl.mute) audioPlayer_wl.UnPause();
+                preFocusMuteState[source] = source.mute;
+                source.mute = true;
             }
             else
             {
-                StopWLAaudio();
+                source.mute = preFocusMuteState.TryGetValue(source, out bool prevMuted) ? prevMuted : source.mute;
             }
-            if (!audioPlayer_button.mute) audioPlayer_button.UnPause();
-
         }
+    }
+
+    private IEnumerable<AudioSource> AllSources()
+    {
+        yield return bg_adudio;
+        yield return audioPlayer_wl;
+        yield return audioPlayer_button;
+        yield return audioSpin_button;
+        yield return bg_audioBonus;
+        yield return audioPlayer_Bonus;
     }
 
     internal void SwitchBGSound(bool isbonus)
@@ -143,8 +157,17 @@ public class AudioController : MonoBehaviour
         bg_adudio.Stop();
     }
 
+    // User-toggle entry point (sound/music buttons). An explicit interaction proves the game
+    // really has focus, so it clears any stale forced mute before applying the category state —
+    // otherwise the button would appear dead, or its effect would be undone on the next refocus.
     internal void ToggleMute(bool toggle, string type = "all")
     {
+        if (isForceMuted)
+        {
+            isForceMuted = false;
+            preFocusMuteState.Clear();
+        }
+
         switch (type)
         {
             case "bg":
@@ -166,5 +189,11 @@ public class AudioController : MonoBehaviour
                 audioSpin_button.mute = toggle;
                 break;
         }
+    }
+
+    // Native/editor focus path — calls the SAME method the WebGL OnFocusChanged path calls.
+    private void OnApplicationFocus(bool focus)
+    {
+        SetMuteAll(!focus);
     }
 }
